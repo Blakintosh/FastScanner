@@ -1,6 +1,9 @@
 # FastScanner
 Black Ops III FastFile Anti-Malware
 
+## Usage
+##### How do I run the program?
+To run the program you have two options, you can either drag a Workshop folder directly onto the program for it to analyse, or you can outright run the program and input a Steam URL to the program for it to determine and find a Workshop folder to analyse. Regardless of which method you use, you must already have the map/mod installed, but crucially you do not need to have ran the map/mod.
 
 ##### How does the Report output work?
 In order to determine the risk of a map/mod, the program splits alerts into three categories, and its overall result will be based on any instance of the most severe it finds.
