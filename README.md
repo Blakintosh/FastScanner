@@ -19,7 +19,7 @@ In order to determine the risk of a map/mod, the program splits alerts into thre
 Yes. The program has been intentionally open sourced under the GPL license so people can contribute as they wish. If you want to contribute directly to this repo, you can either do a pull request or file an issue with a suggested feature/check. The code is fairly flexible so adding a new suspicious function for it to flag, for example, is easy. I suggest contributing directly here, so everyone can benefit!
 
 ## Disclaimer
-This program is licensed under the GNU GPL v3.0. Any contributors to FastScanner and I **cannot** be held liable to any false negatives and/or positives that the program provides, and we are **not** responsible for harm done by content the program analyses.
+This program is licensed under the GNU GPL v3.0. You can find a copy of this license in this repository. Any contributors to FastScanner and I **cannot** be held liable to any false negatives and/or positives that the program provides, and we are **not** responsible for harm done by content the program analyses.
 
 FastScanner does **not** provide active protection from threats and must be manually ran every time a new release and/or update to a map/mod is installed. It should be ran before you first play a map/mod for optimal safety.
 
