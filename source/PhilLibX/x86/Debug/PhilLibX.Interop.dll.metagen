@@ -1,0 +1,224 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly PhilLibX.Interop, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class PhilLibX.Compression.ZLIB: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Decompress(Stream, Stream): PrivateScope, Public, Static, HideBySig
+    Decompress(Byte[]): PrivateScope, Public, Static, HideBySig
+    Compress(Stream, Stream, Int32): PrivateScope, Public, Static, HideBySig
+    Compress(Byte[], Int32): PrivateScope, Public, Static, HideBySig
+Class PhilLibX.Compression.CompressionException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PhilLibX.Imaging.ScratchImage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, ImageFormat): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], ImageFormat): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Metadata, Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Metadata): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetImageFormatForExtension(String): PrivateScope, Public, Static, HideBySig
+    InitializeImage(Metadata, Byte[]): PrivateScope, Public, HideBySig
+    InitializeImage(Metadata): PrivateScope, Public, HideBySig
+    ClearLoadedImage(): PrivateScope, Public, HideBySig
+    ConvertImage(DXGIFormat): PrivateScope, Public, HideBySig
+    Resize(Int32, Int32): PrivateScope, Public, HideBySig
+    GenerateMipMaps(Int32): PrivateScope, Public, HideBySig
+    Load(String, ImageFormat): PrivateScope, Public, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    Load(Byte[], ImageFormat): PrivateScope, Public, HideBySig
+    Save(String, ImageFormat): PrivateScope, Public, HideBySig
+    Save(String): PrivateScope, Public, HideBySig
+    ToBitmap(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    ToBitmap(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct PhilLibX.Imaging.ScratchImage+DXGIFormat: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    DXGIFormat UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32A32TYPELESS = 1 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32A32FLOAT = 2 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32A32UINT = 3 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32A32SINT = 4 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32TYPELESS = 5 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32FLOAT = 6 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32UINT = 7 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32B32SINT = 8 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16TYPELESS = 9 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16FLOAT = 10 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16UNORM = 11 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16UINT = 12 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16SNORM = 13 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16B16A16SINT = 14 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32TYPELESS = 15 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32FLOAT = 16 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32UINT = 17 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G32SINT = 18 : Public, Static, Literal, HasDefault
+    DXGIFormat R32G8X24TYPELESS = 19 : Public, Static, Literal, HasDefault
+    DXGIFormat D32FLOATS8X24UINT = 20 : Public, Static, Literal, HasDefault
+    DXGIFormat R32FLOATX8X24TYPELESS = 21 : Public, Static, Literal, HasDefault
+    DXGIFormat X32TYPELESSG8X24UINT = 22 : Public, Static, Literal, HasDefault
+    DXGIFormat R10G10B10A2TYPELESS = 23 : Public, Static, Literal, HasDefault
+    DXGIFormat R10G10B10A2UNORM = 24 : Public, Static, Literal, HasDefault
+    DXGIFormat R10G10B10A2UINT = 25 : Public, Static, Literal, HasDefault
+    DXGIFormat R11G11B10FLOAT = 26 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8TYPELESS = 27 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8UNORM = 28 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8UNORMSRGB = 29 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8UINT = 30 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8SNORM = 31 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8A8SINT = 32 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16TYPELESS = 33 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16FLOAT = 34 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16UNORM = 35 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16UINT = 36 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16SNORM = 37 : Public, Static, Literal, HasDefault
+    DXGIFormat R16G16SINT = 38 : Public, Static, Literal, HasDefault
+    DXGIFormat R32TYPELESS = 39 : Public, Static, Literal, HasDefault
+    DXGIFormat D32FLOAT = 40 : Public, Static, Literal, HasDefault
+    DXGIFormat R32FLOAT = 41 : Public, Static, Literal, HasDefault
+    DXGIFormat R32UINT = 42 : Public, Static, Literal, HasDefault
+    DXGIFormat R32SINT = 43 : Public, Static, Literal, HasDefault
+    DXGIFormat R24G8TYPELESS = 44 : Public, Static, Literal, HasDefault
+    DXGIFormat D24UNORMS8UINT = 45 : Public, Static, Literal, HasDefault
+    DXGIFormat R24UNORMX8TYPELESS = 46 : Public, Static, Literal, HasDefault
+    DXGIFormat X24TYPELESSG8UINT = 47 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8TYPELESS = 48 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8UNORM = 49 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8UINT = 50 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8SNORM = 51 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8SINT = 52 : Public, Static, Literal, HasDefault
+    DXGIFormat R16TYPELESS = 53 : Public, Static, Literal, HasDefault
+    DXGIFormat R16FLOAT = 54 : Public, Static, Literal, HasDefault
+    DXGIFormat D16UNORM = 55 : Public, Static, Literal, HasDefault
+    DXGIFormat R16UNORM = 56 : Public, Static, Literal, HasDefault
+    DXGIFormat R16UINT = 57 : Public, Static, Literal, HasDefault
+    DXGIFormat R16SNORM = 58 : Public, Static, Literal, HasDefault
+    DXGIFormat R16SINT = 59 : Public, Static, Literal, HasDefault
+    DXGIFormat R8TYPELESS = 60 : Public, Static, Literal, HasDefault
+    DXGIFormat R8UNORM = 61 : Public, Static, Literal, HasDefault
+    DXGIFormat R8UINT = 62 : Public, Static, Literal, HasDefault
+    DXGIFormat R8SNORM = 63 : Public, Static, Literal, HasDefault
+    DXGIFormat R8SINT = 64 : Public, Static, Literal, HasDefault
+    DXGIFormat A8UNORM = 65 : Public, Static, Literal, HasDefault
+    DXGIFormat R1UNORM = 66 : Public, Static, Literal, HasDefault
+    DXGIFormat R9G9B9E5SHAREDEXP = 67 : Public, Static, Literal, HasDefault
+    DXGIFormat R8G8B8G8UNORM = 68 : Public, Static, Literal, HasDefault
+    DXGIFormat G8R8G8B8UNORM = 69 : Public, Static, Literal, HasDefault
+    DXGIFormat BC1TYPELESS = 70 : Public, Static, Literal, HasDefault
+    DXGIFormat BC1UNORM = 71 : Public, Static, Literal, HasDefault
+    DXGIFormat BC1UNORMSRGB = 72 : Public, Static, Literal, HasDefault
+    DXGIFormat BC2TYPELESS = 73 : Public, Static, Literal, HasDefault
+    DXGIFormat BC2UNORM = 74 : Public, Static, Literal, HasDefault
+    DXGIFormat BC2UNORMSRGB = 75 : Public, Static, Literal, HasDefault
+    DXGIFormat BC3TYPELESS = 76 : Public, Static, Literal, HasDefault
+    DXGIFormat BC3UNORM = 77 : Public, Static, Literal, HasDefault
+    DXGIFormat BC3UNORMSRGB = 78 : Public, Static, Literal, HasDefault
+    DXGIFormat BC4TYPELESS = 79 : Public, Static, Literal, HasDefault
+    DXGIFormat BC4UNORM = 80 : Public, Static, Literal, HasDefault
+    DXGIFormat BC4SNORM = 81 : Public, Static, Literal, HasDefault
+    DXGIFormat BC5TYPELESS = 82 : Public, Static, Literal, HasDefault
+    DXGIFormat BC5UNORM = 83 : Public, Static, Literal, HasDefault
+    DXGIFormat BC5SNORM = 84 : Public, Static, Literal, HasDefault
+    DXGIFormat B5G6R5UNORM = 85 : Public, Static, Literal, HasDefault
+    DXGIFormat B5G5R5A1UNORM = 86 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8A8UNORM = 87 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8X8UNORM = 88 : Public, Static, Literal, HasDefault
+    DXGIFormat R10G10B10XRBIASA2UNORM = 89 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8A8TYPELESS = 90 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8A8UNORMSRGB = 91 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8X8TYPELESS = 92 : Public, Static, Literal, HasDefault
+    DXGIFormat B8G8R8X8UNORMSRGB = 93 : Public, Static, Literal, HasDefault
+    DXGIFormat BC6HTYPELESS = 94 : Public, Static, Literal, HasDefault
+    DXGIFormat BC6HUF16 = 95 : Public, Static, Literal, HasDefault
+    DXGIFormat BC6HSF16 = 96 : Public, Static, Literal, HasDefault
+    DXGIFormat BC7TYPELESS = 97 : Public, Static, Literal, HasDefault
+    DXGIFormat BC7UNORM = 98 : Public, Static, Literal, HasDefault
+    DXGIFormat BC7UNORMSRGB = 99 : Public, Static, Literal, HasDefault
+    DXGIFormat AYUV = 100 : Public, Static, Literal, HasDefault
+    DXGIFormat Y410 = 101 : Public, Static, Literal, HasDefault
+    DXGIFormat Y416 = 102 : Public, Static, Literal, HasDefault
+    DXGIFormat NV12 = 103 : Public, Static, Literal, HasDefault
+    DXGIFormat P010 = 104 : Public, Static, Literal, HasDefault
+    DXGIFormat P016 = 105 : Public, Static, Literal, HasDefault
+    DXGIFormat OPAQUE420 = 106 : Public, Static, Literal, HasDefault
+    DXGIFormat YUY2 = 107 : Public, Static, Literal, HasDefault
+    DXGIFormat Y210 = 108 : Public, Static, Literal, HasDefault
+    DXGIFormat Y216 = 109 : Public, Static, Literal, HasDefault
+    DXGIFormat NV11 = 110 : Public, Static, Literal, HasDefault
+    DXGIFormat AI44 = 111 : Public, Static, Literal, HasDefault
+    DXGIFormat IA44 = 112 : Public, Static, Literal, HasDefault
+    DXGIFormat P8 = 113 : Public, Static, Literal, HasDefault
+    DXGIFormat A8P8 = 114 : Public, Static, Literal, HasDefault
+    DXGIFormat B4G4R4A4UNORM = 115 : Public, Static, Literal, HasDefault
+    DXGIFormat FORCEUINT = 4294967295 : Public, Static, Literal, HasDefault
+Struct PhilLibX.Imaging.ScratchImage+TexDimension: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    TexDimension TEXTURE1D = 2 : Public, Static, Literal, HasDefault
+    TexDimension TEXTURE2D = 3 : Public, Static, Literal, HasDefault
+    TexDimension TEXTURE3D = 4 : Public, Static, Literal, HasDefault
+Struct PhilLibX.Imaging.ScratchImage+TexMiscFlags: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    TexMiscFlags NONE = 0 : Public, Static, Literal, HasDefault
+    TexMiscFlags TEXTURECUBE = 4 : Public, Static, Literal, HasDefault
+Struct PhilLibX.Imaging.ScratchImage+TexMiscFlags2: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    TexMiscFlags2 NONE = 0 : Public, Static, Literal, HasDefault
+    TexMiscFlags2 TEXMISC2ALPHAMODEMASK = 7 : Public, Static, Literal, HasDefault
+Struct PhilLibX.Imaging.ScratchImage+ImageFormat: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ImageFormat Automatic = 0 : Public, Static, Literal, HasDefault
+    ImageFormat DDS = 1 : Public, Static, Literal, HasDefault
+    ImageFormat PNG = 2 : Public, Static, Literal, HasDefault
+    ImageFormat TGA = 3 : Public, Static, Literal, HasDefault
+    ImageFormat JPG = 4 : Public, Static, Literal, HasDefault
+    ImageFormat TIF = 5 : Public, Static, Literal, HasDefault
+    ImageFormat BMP = 6 : Public, Static, Literal, HasDefault
+Class PhilLibX.Imaging.ScratchImage+Metadata: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt64 Width : Public
+    UInt64 Height : Public
+    UInt64 Depth : Public
+    UInt64 ArraySize : Public
+    UInt64 MipLevels : Public
+    TexMiscFlags MiscFlags : Public
+    TexMiscFlags2 MiscFlags2 : Public
+    DXGIFormat Format : Public
+    TexDimension Dimension : Public
+Class PhilLibX.Imaging.DirectXException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PhilLibX.Compression.LZ4: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Decompress(Byte[], Int32): PrivateScope, Public, Static, HideBySig
+    Compress(Byte[], Byte): PrivateScope, Public, Static, HideBySig
+Class PhilLibX.Compression.ZStandard: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Decompress(Byte[]): PrivateScope, Public, Static, HideBySig
+    Compress(Byte[], Int32): PrivateScope, Public, Static, HideBySig
